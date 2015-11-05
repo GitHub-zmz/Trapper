@@ -62,3 +62,21 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+1_Data/Managed/Assembly-CSharp.dll
+1_Data/Managed/mscorlib.dll
+1_Data/Mono/etc/mono/1.0/DefaultWsdlHelpGenerator.aspx
+*.browser
+1_Data/Managed/Mono.Security.dll
+*.dll
+1_Data/Mono/etc/mono/1.0/machine.config
+*.config
+1_Data/Mono/etc/mono/2.0/settings.map
+*.aspx
+1_Data/Mono/etc/mono/browscap.ini
+*.xml
+1_Data/output_log.txt
+1_Data/Mono/etc/mono/config
+*.assets
+1_Data/Resources/unity default resources
+1_Data/Resources/unity_builtin_extra
+1_Data/PlayerConnectionConfigFile

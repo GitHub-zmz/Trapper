@@ -64,6 +64,8 @@ public class TouchController : MonoBehaviour
             }
             else if(!slide)
             {
+                if (touchPause++ < 6)
+                    return;
                 if (touchEndPos.x > screenCenterX)
                 {
                     carl.move(true);

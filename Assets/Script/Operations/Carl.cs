@@ -8,6 +8,7 @@ public class Carl : MonoBehaviour
     Vector3 jumpHigh = new Vector3(0, 0.5f, 0);
     Animator animator;
     Rigidbody rigid;
+    public Transform camera;
 
     void Start()
     {
@@ -55,9 +56,17 @@ public class Carl : MonoBehaviour
 
                     float euler = Mathf.Abs(transform.eulerAngles.y) % 180;
                     if (euler > 45)
+                    {//侧面
                         transform.position = new Vector3(to.x + (right ? 0.2f : -0.2f), transform.position.y, to.z);
+
+                        camera.position = new Vector3(transform.position.x , camera.position.y, camera.position.z);
+                    }
                     else
+                    {//正面
                         transform.position = new Vector3(to.x, transform.position.y, to.z + (right ? 0.2f : -0.2f));
+
+                        camera.position = new Vector3(camera.position.x, camera.position.y, transform.position.z);
+                    }
                 }
             }
 
