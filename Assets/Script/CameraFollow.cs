@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿using nityEngine;
 using System.Collections;
 
 public class CameraFollow : MonoBehaviour
